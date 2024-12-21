@@ -1,0 +1,561 @@
+@import url(" https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+html, body, header, nav, section, ul, ol, li, div, span, p, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #2e2863!important;
+  --color-white:#ffffff;
+  --color-blue:#2e2863;
+}
+
+html {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+hr {
+  width: 65%;
+  border: solid 1px white;
+  opacity: 0.2;
+  margin-left: 90px;
+  transition: opacity 0.8s;
+  opacity: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 15px 50px;
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  z-index: 3;
+}
+header .brand {
+  font-size: 1.8em;
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1.5;
+}
+header a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+header a .baseline {
+  display: inline-block;
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 1.4;
+}
+
+section.intro {
+  width: 100%;
+  height: 250px;
+  margin: 130px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.intro h2 {
+  font-size: 10em;
+  font-weight: normal;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+section.intro p {
+  display: block;
+  width: 35%;
+  font-size: 1.1em;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0px;
+  justify-content: center;
+}
+section #nav {
+  width: 80%;
+  margin: 60px auto 0px;
+  background-color: #2e2863;
+  padding: 25px 0px;
+  text-align: center;
+  transition: opacity 0.8s;
+  opacity: 0;
+}
+section #nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+section #nav li {
+  display: inline-block;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+section #nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2e2863;
+}
+section .active {
+  border-bottom: solid 2px #ffffff;
+}
+section .indice {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  background: #2e2863;
+  padding: 10px 0px 20px 100px;
+  transition: opacituy 0.8s;
+  opacity: 0;
+}
+section .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100%;
+  margin-top: 30px;
+}
+section .profile #y-2017 {
+  margin-bottom: 10px;
+}
+section .profile .year {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 250px;
+}
+section .profile .year .h3 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 30px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+}
+section .profile .year .timeline {
+  border-right: 1px solid #ffffff;
+  padding-right: 30px;
+  display: block;
+  width: 40%;
+}
+section .profile .year .timeline > h2 {
+  text-align: right;
+  font-size: 3em;
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+section .profile .year .timeline .title-timeline {
+  font-size: 2em;
+  line-height: 40px;
+  padding-left: 75px;
+  display: inline-block;
+}
+section .profile .year .timeline > h4 {
+  text-align: left;
+  padding-left: 75px;
+  display: block;
+  font-weight: 500;
+  padding-top: 8px;
+  text-transform: uppercase;
+}
+section .profile .year .timeline .experience {
+  font-weight: 600;
+  padding-top: 8px;
+  padding-left: 75px;
+}
+section .profile .year .timeline .chapeau {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  justify-content: flex-start;
+  margin: 5px 0px;
+  align-items: last baseline;
+  padding-left: 75px;
+}
+section .profile .year .timeline .chapeau h3 {
+  display: block;
+  width: 80%;
+  font-size: 1em;
+  line-height: 24px;
+  letter-spacing: 0.2;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+section .profile .year .timeline .chapeau img {
+  display: block;
+  height: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+section .profile .year .timeline .chapeau .logo-pwc {
+  padding: 5px 10px;
+  width: 20%;
+}
+section .profile .year .timeline .chapeau .logo-ll {
+  padding: 8px;
+  width: 40%;
+}
+section .profile .year .timeline .chapeau .logo-cci {
+  width: 20%;
+}
+section .profile .year .timeline .skills {
+  display: block;
+  text-align: left;
+  width: 85%;
+  margin-left: 75px;
+  letter-spacing: 0.5;
+}
+section .profile .year .timeline .skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85%;
+  justify-content: flex-start;
+  margin: 5px 0;
+  align-items: center;
+  padding-left: 75px;
+}
+section .profile .year .timeline .skills-icons p {
+  font-size: 1.2em;
+}
+section .profile .year .timeline .skills-icons img {
+  display: block;
+  height: auto;
+  width: 8%;
+  margin-right: 8px;
+}
+section .profile .year .description {
+  display: block;
+  width: 40%;
+  text-align: left;
+  padding-left: 30px;
+}
+section .profile .year .description > h2 {
+  font-size: 1.3em;
+  line-height: 28px;
+  font-weight: 700;
+}
+section .profile .year .description > h3, section .profile .year .description .forma-chapeau h3 {
+  font-size: 1em;
+  margin-top: 10px;
+}
+section .profile .year .description li {
+  list-style: none;
+  line-height: 24px;
+  letter-spacing: 1;
+}
+section .profile h3.citation {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 30px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+}
+section .profile .years {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 250px;
+  justify-content: space-between;
+  border: none;
+}
+section .profile .years .avant-2016 {
+  width: 25%;
+  padding: 30px;
+  margin-bottom: 200px;
+}
+section .profile .years .avant-2016 > p {
+  letter-spacing: 1 !important;
+}
+section .profile .years .avant-2016 > h2 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 50px;
+}
+section .profile .years .avant-2016 > h3 {
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+section .profile .years .avant-2016 > h4 {
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section .profile .years .avant-2016 .experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin: 15px 0px;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2e2863;
+  padding: 10px 6px;
+  border-radius: 5px;
+}
+section .profile .years .avant-2016 .experience img {
+  display: block;
+  width: 50%;
+  height: 50px;
+  text-align: right;
+}
+section .profile .years .avant-2016 .societe {
+  display: block;
+  width: 65%;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+footer {
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+footer p {
+  padding: 10px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  hr {
+    width: 78%;
+    margin-left: 13px;
+  }
+  section.intro {
+    width: 100%;
+    height: 250px;
+    margin: 150px 0px 0px 0px;
+    align-items: center;
+  }
+  section.intro h2 {
+    font-size: 8em;
+  }
+  section.intro p {
+    margin-left: 30px;
+  }
+  section .indice {
+    margin: 0px 0px 60px 0px;
+    padding-left: 20px;
+  }
+  section #nav ul {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .profile .citation {
+    margin: 0px 0px 30px 0px;
+    text-align: left;
+    padding: 0;
+  }
+  section .profile .year .timeline > h3, section .profile .year .timeline > h4, section .profile .year .timeline .skills {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  section .profile .year .timeline .chapeau {
+    padding-left: 0;
+    width: 100%;
+    align-items: start;
+  }
+  section .profile .year .timeline .title-timeline {
+    padding-left: 0;
+  }
+  section .profile .year .timeline .experience {
+    padding-left: 0px;
+    margin-top: -10px;
+    padding-top: 0;
+  }
+  section .profile .year .timeline p:first-child {
+    display: block;
+    padding-left: 0;
+  }
+  section .profile #y-2024 .chapeau {
+    align-items: last baseline;
+  }
+  section .profile .years .avant-2016 {
+    width: 28.5714285714%;
+    padding: 5px;
+  }
+  section .profile .years .avant-2016 > h2 {
+    font-size: 2em;
+  }
+  section .profile .years .avant-2016 > h3 {
+    font-size: 1.15em;
+    letter-spacing: 1;
+  }
+  section .profile .years .avant-2016 .experience p {
+    font-size: 1em;
+  }
+  section .profile .years .avant-2016 .experience p img {
+    width: 50%;
+  }
+  section .profile .years .avant-2016 .societe {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0px;
+    text-align: center;
+  }
+  hr {
+    width: 85%;
+    margin-left: 34px;
+  }
+  section.intro {
+    width: 90%;
+    flex-direction: column;
+    margin: 150px auto 50px;
+  }
+  section.intro h2 {
+    width: 100%;
+    font-size: 5em;
+    margin: 0;
+  }
+  section.intro p {
+    width: 100%;
+    margin: 30px auto 0px;
+    text-align: center;
+  }
+  section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .indice {
+    margin-left: -60px;
+  }
+  section #nav {
+    width: 100%;
+  }
+  section #nav ul {
+    width: 95%;
+  }
+  section #nav ul li {
+    font-weight: 600;
+    font-size: 0.75em;
+  }
+  section .profile {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  section .profile .year, section .profile .years {
+    flex-direction: column;
+    margin: 80px auto;
+  }
+  section .profile .year > h2 {
+    align-items: flex-start;
+  }
+  section .profile .year .timeline, section .profile .year .description {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+  }
+  section .profile .year .timeline .title-timeline {
+    padding-left: 0;
+  }
+  section .profile .year .timeline > h2 {
+    text-align: left;
+  }
+  section .profile .year .timeline .chapeau,
+  section .profile .year .timeline > h3,
+  section .profile .year .timeline > h4,
+  section .profile .year .timeline .skills {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: start;
+  }
+  section .profile .year .timeline p.chapeau {
+    align-items: last baseline;
+  }
+  section .profile .year .timeline .chapeau .logo-ll {
+    width: 35%;
+  }
+  section .profile .year .timeline .chapeau .logo-cci {
+    width: 18%;
+  }
+  section .profile .year .timeline .experience {
+    margin-top: -10px;
+    padding-left: 0px;
+  }
+  section .profile .citation {
+    margin-left: 20px;
+    padding: 0;
+    text-align: left;
+  }
+  section .profile h3.citation {
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-left: 0;
+  }
+  section .profile .years {
+    justify-content: center;
+    border: none;
+  }
+  section .profile .years .avant-2016 {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto 100px;
+  }
+  section .profile .years .avant-2016 > h2 {
+    font-size: 2em;
+  }
+  section .profile .years div:nth-child(2) div img {
+    margin-right: 40px;
+  }
+}/*# sourceMappingURL=index.css.map */

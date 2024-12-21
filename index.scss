@@ -1,0 +1,534 @@
+@import url(' https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+html,body,header,nav,section,ul,ol,li,div,span,p,h1,h2,h3,h4,h5,h6,a{margin: 0;padding: 0}
+:root{
+	--background-color: #2e2863!important;
+	--color-white:#ffffff;
+    --color-blue:#2e2863;
+}
+html{
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	font-family: "Neue Haas Grotesk Display Pro","Helvetica Neue",-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
+	background-color:var(--background-color);
+	color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+}
+p{font-size: 1em;line-height: 24px;}
+h4{font-size: 1em;line-height: 24px;}
+hr{width: 65%;
+	border: solid 1px white;
+	opacity: .2;
+	margin-left: 90px;
+	transition: opacity .8s;
+	opacity: 0;	
+}
+header{
+	width: 100%;
+	display: flex; 
+	flex-direction: column; 
+	position: fixed;
+	padding: 15px 50px;
+	background-color:var(--color-white);
+	color: var(--color-blue);
+	z-index: 3;
+        .brand{
+            font-size: 1.8em;
+            font-family: "Neue Haas Grotesk Display Pro","Helvetica Neue",-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
+            display: block;
+            font-weight: 600;
+            letter-spacing: 1.5; 
+        }
+        a{
+            color: var(--color-blue);
+            text-decoration: none;
+                .baseline{
+                display: inline-block;
+                font-family: "Neue Haas Grotesk Display Pro","Helvetica Neue",-apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans",sans-serif;
+                font-size: 1.1em;
+                font-weight: 400;
+                letter-spacing: 1.4;
+            }
+        }    
+
+}
+
+section.intro{
+    width: 100%;
+    height: 250px;
+    margin: 130px 0px 0px 0px;
+    display: flex; 
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+        h2{
+            font-size: 10em; font-weight: normal; display: block; width: 50%; text-align: center;
+        }
+        p{
+            display: block;
+            width: 35%;font-size: 1.1em;
+        }
+}
+section{
+	width: 80%; 
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto 0px;
+	justify-content: center;
+
+    #nav{
+        width: 80%;
+        margin: 60px auto 0px;
+        background-color: #2e2863;
+        padding: 25px 0px;
+          text-align: center;		
+        transition: opacity .8s;
+          opacity: 0;         
+          ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;	
+            width: 80%;
+            margin: 0 auto;
+        }
+        li{
+            display: inline-block;
+            list-style: none;
+            font-size: 1em;
+            font-weight: 600;
+            a{
+                text-decoration: none;
+                color:#ffffff;
+                background-color: #2e2863;	
+            }
+        }
+    }
+    .active{
+        border-bottom: solid 2px #ffffff;
+    }
+
+    .indice{
+        font-size: 1.5em;
+        font-style: italic;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        background:#2e2863;
+        padding: 10px 0px 20px 100px;
+        transition: opacituy .8s;
+          opacity: 0;	
+        }
+        .profile{
+            width: 100%;	
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            min-height: 100%;
+            margin-top: 30px;
+
+            #y-2017{margin-bottom: 10px}
+            .year{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 250px;
+                .h3{
+                    font-size: 1em;
+                    font-weight: normal;
+                    font-style: italic;
+                    padding-left: 30px;
+                    letter-spacing: 1;
+                    text-transform: uppercase;
+                }
+                .timeline{
+                    border-right: 1px solid #ffffff;
+                    padding-right: 30px;
+                    display: block;
+                    width: 40%;
+                    > h2{
+                        text-align: right;
+                        font-size: 3em; 
+                        font-weight: normal;
+                        padding-bottom: 8px;
+                    }
+                    .title-timeline{
+                        font-size: 2em; 
+                        line-height:40px;
+                        padding-left:75px;
+                        display: inline-block;
+                    }
+                    > h4{
+                        text-align: left;
+                        padding-left:75px;
+                        display: block;
+                        font-weight: 500;
+                        padding-top: 8px;
+                        text-transform:uppercase
+                    }
+                    .experience{
+                        font-weight: 600;
+                        padding-top: 8px;
+                        padding-left:75px;
+                    }
+                    .chapeau{
+                        display: flex;
+                        flex-direction: row;
+                        width: 85%;
+                        justify-content: flex-start;
+                        margin: 5px 0px;
+                        align-items: last baseline;
+                        padding-left: 75px;
+                        h3{
+                            display: block; 
+                            width: 80%;
+                            font-size: 1em;
+                            line-height: 24px;
+                            letter-spacing: .2;
+                            font-weight: 600;
+                            padding-left:10px;
+                            padding-top: 8px;
+                        }
+                        img{
+                            display: block;
+                            height: auto;
+                            text-align: center;
+                            background-color: #ffffff;
+                            border-radius: 5px	
+                        }
+                        .logo-pwc{
+                            padding: 5px 10px;
+                            width: 20%;
+                        }
+                        .logo-ll{
+                            padding: 8px;
+                            width: 40%;
+                        }
+                        .logo-cci{
+                            width: 20%;
+                        }
+                    }
+                    .skills{
+                        display: block;
+                        text-align: left;
+                        width: 85%;
+                        margin-left: 75px;
+                        letter-spacing: .5;
+                    }
+                    .skills-icons{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 85%;
+                        justify-content: flex-start;
+                        margin: 5px 0;
+                        align-items: center;
+                        padding-left: 75px;                       
+                        p{font-size: 1.2em}
+                        img{
+                        display: block;
+                        height: auto;
+                        width: 8%;
+                        margin-right: 8px;
+                        }
+                    }
+                }
+                .description{
+                    display: block;
+                    width: 40%;
+                    text-align: left; 
+                    padding-left: 30px;
+                    > h2{
+                        font-size: 1.3em; 
+                        line-height: 28px;
+                        font-weight: 700;
+                    }
+                    > h3, .forma-chapeau h3{
+                        font-size: 1em;
+                        margin-top: 10px
+                    }
+                    li{
+                        list-style: none;
+                        line-height: 24px;
+                        letter-spacing: 1;
+                    }
+                    
+                }
+            }
+            h3.citation{
+                font-size: 1em;
+                font-weight: normal;
+                font-style: italic;
+                padding-left: 30px;
+                letter-spacing: 1;
+                text-transform: uppercase;
+            }
+            .years{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 250px;
+                justify-content:space-between;
+                border: none;
+                .avant-2016{
+                    width: calc(100% / 4);
+                    padding: 30px;
+                    margin-bottom: 200px;
+                    > p{letter-spacing: 1!important;}
+                    > h2{
+                        text-align: left;
+                        font-size: 2.5em; 
+                        font-weight: normal;
+                        line-height: 50px;
+                    }
+                    > h3{
+                        text-align: left;
+                        font-size: 1.2em;
+                        line-height: 30px;
+                    }
+                    > h4{
+                        padding-top: 8px;
+                        text-transform:uppercase;
+                        font-weight: 500;
+                    }
+                    .experience{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        justify-content: center;
+                        margin: 15px 0px;
+                        align-items: center;
+                        background-color: #ffffff;
+                        color:#2e2863;
+                        padding: 10px 6px;
+                        border-radius: 5px;
+                        img{
+                            display: block;
+                            width: 50%;
+                            height: 50px;
+                            text-align: right;
+                        }
+                    }
+                    .societe{
+                        display: block;
+                        width: 65%;
+                        font-size: 1.1em;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+}
+footer{
+	display: block;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: var(--background-color);
+	color: var(--color);
+    p{padding: 10px 0px}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	hr{
+		width: 78%;		
+	  	margin-left: 13px;
+	}
+    section.intro{
+		width: 100%;
+		height: 250px;
+		margin: 150px 0px 0px 0px;
+		align-items: center;
+        h2{font-size: 8em; }
+        p{margin-left: 30px}
+	}
+    section {
+        .indice{
+            margin: 0px 0px 60px 0px;
+            padding-left: 20px;
+        }
+        #nav ul {
+            justify-content: space-around;	
+            width: 100%;
+            margin: 0 auto;
+        }
+        .profile {
+            .citation{
+                margin: 0px 0px 30px 0px;
+                text-align: left;
+                padding: 0;
+            }
+            .year{
+                .timeline{
+                    > h3, > h4, .skills{
+                        padding-left:0!important;
+                        margin-left: 0!important;
+                    }
+                    .chapeau{
+                        padding-left: 0;
+                        width: 100%;
+                        align-items: start;
+                    }
+                    .title-timeline{padding-left:0;}
+                    .experience{
+                        padding-left:0px;
+                        margin-top: -10px;
+                        padding-top: 0;
+                    }
+                    p:first-child{
+                        display: block;
+                        padding-left: 0
+                    }
+                }
+            }
+            #y-2024 .chapeau{align-items: last baseline;}
+            .years{
+                .avant-2016{
+                    width: calc(100% / 3.5);
+                    padding: 5px;
+                    > h2{
+                        font-size: 2em; 
+                    }
+                    > h3{
+                        font-size: 1.15em;
+                        letter-spacing: 1;
+                    }
+                    .experience p{
+                        font-size: 1em;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                    .societe{
+                        width: 50%;
+                        text-align: center;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px){
+	header{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding: 15px 0px;
+		text-align: center;
+	}
+	hr{
+		width: 85%;		
+	  	margin-left: 34px;
+	}
+    section.intro{
+		width: 90%;
+		flex-direction: column;
+		margin: 150px auto 50px;
+        h2{
+            width: 100%;
+            font-size: 5em;margin:0 
+        }
+        p{
+            width: 100%; margin:30px auto 0px; text-align: center;
+        }
+	}
+	section{
+		width: 100%; 
+		margin: 0 auto;
+        .indice{
+            margin-left: -60px;
+        }
+        #nav{
+            width:100%;
+            ul {
+                width: 95%;
+                li{
+                    font-weight: 600;
+                    font-size: .75em;
+                }
+            }
+        }
+        .profile{
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+            .year,.years{
+                flex-direction: column;
+                margin: 80px auto;
+            }
+            .year{
+                > h2{align-items: flex-start;}
+                .timeline,.description{
+                    width: 90%;
+                    margin: 0 auto;
+                    border: none;
+                    padding: 10px;		
+                }
+                .timeline{
+                    .title-timeline {
+                        padding-left: 0;
+                      }
+                      > h2{
+                        text-align: left;
+                    }
+                      .chapeau, 
+                      > h3, 
+                      > h4, 
+                      .skills{
+                        padding-left:0!important;
+                        margin-left: 0!important;
+                        width: 100%;
+                        align-items: start;
+                    }
+                    p.chapeau{
+                        align-items: last baseline;
+                    }
+                    .chapeau{
+                        .logo-ll{
+                            width: 35%;
+                        }
+                        .logo-cci {
+                            width: 18%;
+                        }
+                    }
+                    .experience{
+                        margin-top: -10px;
+                        padding-left:0px;
+                    }
+                }
+            }
+            .citation{
+                margin-left: 20px;
+                padding: 0;
+                text-align: left;
+            }
+            h3.citation {font-size: .80em; font-weight: 600; padding-left: 0;}
+            .years{
+                justify-content:center;
+                border: none;
+                .avant-2016{
+                    width: 90%;
+                    padding: 0;
+                    margin: 0 auto 100px;
+                    > h2{
+                        font-size: 2em;
+                    }
+                }
+                div:nth-child(2) div img{margin-right: 40px}
+            }
+        }
+    }
+}
