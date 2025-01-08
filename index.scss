@@ -20,7 +20,7 @@ body{
 	display: flex;
 	flex-direction: column;
 }
-p{font-size: 1em;line-height: 24px;}
+p{font-size: 1em;line-height: 24px;letter-spacing: 1px;}
 h4{font-size: 1em;line-height: 24px;}
 hr{width: 65%;
 	border: solid 1px white;
@@ -427,12 +427,14 @@ footer{
 }
 
 @media screen and (min-width: 319px) and (max-width: 767px){
+    p{letter-spacing: normal;}
 	header{
 		width: 100%;
 		display: block;
 		margin: 0 auto;
 		padding: 15px 0px;
 		text-align: center;
+        p{display: inline; font-size: .9em;}
 	}
 	hr{
 		width: 85%;		
