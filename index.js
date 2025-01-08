@@ -45,7 +45,7 @@ let move = function() {
          });
             $parcours.css({
              position: "fixed",
-             top: "175px",
+             top: "145px",
              opacity:"1"             
          });
             $line.css({
