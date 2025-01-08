@@ -46,12 +46,12 @@ let move = function() {
          });
             $parcours.css({
                position: "fixed",
-               top: "145px",
+               top: "115px",
                opacity:"1"             
          });
             $line.css({
                position: "fixed",
-               top: "228px",
+               top: "200px",
                opacity:"1"            
          });
             $head.css({
