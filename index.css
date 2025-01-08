@@ -29,6 +29,7 @@ body {
 p {
   font-size: 1em;
   line-height: 24px;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -43,6 +44,7 @@ hr {
   margin-left: 90px;
   transition: opacity 0.8s;
   opacity: 0;
+  margin-top: 30px;
 }
 
 header {
@@ -57,7 +59,7 @@ header {
 }
 header .brand {
   font-size: 1.8em;
-  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
   display: block;
   font-weight: 600;
   letter-spacing: 1.5;
@@ -68,16 +70,21 @@ header a {
 }
 header a .baseline {
   display: inline-block;
-  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 1.4;
+}
+header p {
+  display: block;
+  width: 230px;
+  text-align: center;
 }
 
 section.intro {
   width: 100%;
   height: 250px;
-  margin: 130px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -143,6 +150,7 @@ section .indice {
   padding: 10px 0px 20px 100px;
   transition: opacituy 0.8s;
   opacity: 0;
+  margin-top: 60px;
 }
 section .profile {
   width: 100%;
@@ -372,19 +380,21 @@ footer p {
     margin-left: 13px;
   }
   section.intro {
-    width: 100%;
+    width: 80%;
     height: 250px;
-    margin: 150px 0px 0px 0px;
+    margin: 80px auto;
     align-items: center;
   }
   section.intro h2 {
     font-size: 8em;
+    width: 50%;
   }
   section.intro p {
-    margin-left: 30px;
+    width: 50%;
+    padding-left: 50px;
   }
   section .indice {
-    margin: 0px 0px 60px 0px;
+    margin: 60px 0px 60px 0px;
     padding-left: 20px;
   }
   section #nav ul {
@@ -444,6 +454,9 @@ footer p {
   }
 }
 @media screen and (min-width: 319px) and (max-width: 767px) {
+  p {
+    letter-spacing: normal;
+  }
   header {
     width: 100%;
     display: block;
@@ -451,14 +464,20 @@ footer p {
     padding: 15px 0px;
     text-align: center;
   }
+  header p {
+    display: inline;
+    font-size: 0.9em;
+  }
   hr {
     width: 85%;
     margin-left: 34px;
+    margin-top: 0;
   }
   section.intro {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
-    margin: 150px auto 50px;
+    flex-wrap: nowrap;
+    margin: 100px auto 50px;
   }
   section.intro h2 {
     width: 100%;
@@ -466,19 +485,22 @@ footer p {
     margin: 0;
   }
   section.intro p {
-    width: 100%;
+    width: 80%;
     margin: 30px auto 0px;
     text-align: center;
   }
   section {
     width: 100%;
+    flex-direction: column;
     margin: 0 auto;
   }
   section .indice {
     margin-left: -60px;
+    margin-top: 30px;
   }
   section #nav {
     width: 100%;
+    margin-top: 35px;
   }
   section #nav ul {
     width: 95%;
@@ -493,6 +515,7 @@ footer p {
     padding: 0;
   }
   section .profile .year, section .profile .years {
+    width: 100%;
     flex-direction: column;
     margin: 80px auto;
   }

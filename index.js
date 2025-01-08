@@ -34,6 +34,7 @@ let $topRef = $("#refTop");
 let $scrollNav = $("#nav");
 let $parcours = $("#indice");
 let $line = $("#line");
+let $head = $("#header");
 let move = function() {
    let st = $(window).scrollTop();
    let ot = $topRef.offset().top;
@@ -44,14 +45,19 @@ let move = function() {
              opacity:"1"
          });
             $parcours.css({
-             position: "fixed",
-             top: "175px",
-             opacity:"1"             
+               position: "fixed",
+               top: "115px",
+               opacity:"1"             
          });
             $line.css({
-            position: "fixed",
-            top: "228px",
-             opacity:"1"            
+               position: "fixed",
+               top: "200px",
+               opacity:"1"            
+         });
+            $head.css({
+               position: "fixed",
+               top: "0",
+               zIndex: "1000"
          });
      } else {
          $scrollNav.css({
@@ -62,12 +68,17 @@ let move = function() {
          $parcours.css({
              position: "relative",
              top: "",
-            opacity:"0"
+               opacity:"0"
          });
-            $line.css({
+         $line.css({
              position: "relative",
              top: "",
             opacity:"0"             
+         });
+         $head.css({
+            position: "sticky",
+            top: "0",
+            zIndex: "1000"
          });
      }
 }
