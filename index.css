@@ -471,6 +471,7 @@ footer p {
   hr {
     width: 85%;
     margin-left: 34px;
+    margin-top: 0;
   }
   section.intro {
     width: 100%;
@@ -495,6 +496,7 @@ footer p {
   }
   section .indice {
     margin-left: -60px;
+    margin-top: 30px;
   }
   section #nav {
     width: 100%;
