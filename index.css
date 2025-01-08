@@ -496,6 +496,7 @@ footer p {
   }
   section #nav {
     width: 100%;
+    margin-top: 35px;
   }
   section #nav ul {
     width: 95%;
