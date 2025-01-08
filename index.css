@@ -380,18 +380,18 @@ footer p {
     margin-left: 13px;
   }
   section.intro {
-    width: 100%;
+    width: 80%;
     height: 250px;
-    margin: 100px 0px 0px 0px;
+    margin: 80px auto;
     align-items: center;
   }
   section.intro h2 {
     font-size: 8em;
-    width: 100%;
+    width: 50%;
   }
   section.intro p {
-    width: 100%;
-    padding-left: 30px;
+    width: 50%;
+    padding-left: 50px;
   }
   section .indice {
     margin: 60px 0px 60px 0px;
