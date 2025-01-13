@@ -61,6 +61,8 @@ header{
             display: block;
             width: 230px;
             text-align: center;
+            font-weight: 500;
+            line-height: 20px;
         }  
 
 }
@@ -78,8 +80,6 @@ section.intro{
         p{
             display: block;
             width: 35%;font-size: 1.1em;
-            font-weight: 500;
-            line-height: 20px;
         }
 }
 section{
@@ -94,9 +94,9 @@ section{
         margin: 60px auto 0px;
         background-color: #2e2863;
         padding: 25px 0px;
-          text-align: center;		
+        text-align: center;		
         transition: opacity .8s;
-          opacity: 0;         
+        opacity: 0;         
           ul {
             display: flex;
             flex-direction: row;

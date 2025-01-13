@@ -79,6 +79,8 @@ header p {
   display: block;
   width: 230px;
   text-align: center;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 section.intro {
@@ -101,8 +103,6 @@ section.intro p {
   display: block;
   width: 35%;
   font-size: 1.1em;
-  font-weight: 500;
-  line-height: 20px;
 }
 
 section {
@@ -389,19 +389,11 @@ footer p {
   }
   section.intro h2 {
     font-size: 8em;
-<<<<<<< HEAD
-    width: 100%;
-  }
-  section.intro p {
-    width: 100%;
-    padding-left: 30px;
-=======
     width: 50%;
   }
   section.intro p {
     width: 50%;
     padding-left: 50px;
->>>>>>> d3dd92e5ef3c4120ab2ad3065c37cc360aa2d01c
   }
   section .indice {
     margin: 60px 0px 60px 0px;
@@ -487,11 +479,7 @@ footer p {
     width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
-<<<<<<< HEAD
-    margin: 150px auto 50px;
-=======
     margin: 100px auto 50px;
->>>>>>> d3dd92e5ef3c4120ab2ad3065c37cc360aa2d01c
   }
   section.intro h2 {
     width: 100%;
