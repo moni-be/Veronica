@@ -54,8 +54,6 @@ header{
                 font-size: 1.1em;
                 font-weight: 400;
                 letter-spacing: 1.4;
-                font-weight: 500;
-                line-height: 20px;
             }
         }    
 
@@ -75,6 +73,8 @@ section.intro{
         p{
             display: block;
             width: 35%;font-size: 1.1em;
+            font-weight: 500;
+            line-height: 20px;
         }
 }
 section{
@@ -122,7 +122,7 @@ section{
         width: 100%;
         background:#2e2863;
         padding: 10px 0px 20px 100px;
-        transition: opacituy .8s;
+        transition: opacity .8s;
           opacity: 0;	
         }
         .profile{
