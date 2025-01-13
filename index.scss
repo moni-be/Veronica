@@ -61,6 +61,7 @@ header{
             display: block;
             width: 230px;
             text-align: center;
+            font-weight: 500;
         }  
 
 }
@@ -92,9 +93,9 @@ section{
         margin: 60px auto 0px;
         background-color: #2e2863;
         padding: 25px 0px;
-          text-align: center;		
+        text-align: center;		
         transition: opacity .8s;
-          opacity: 0;         
+        opacity: 0;         
           ul {
             display: flex;
             flex-direction: row;
@@ -117,7 +118,6 @@ section{
     .active{
         border-bottom: solid 2px #ffffff;
     }
-
     .indice{
         font-size: 1.5em;
         font-style: italic;
@@ -125,8 +125,8 @@ section{
         display: block;
         width: 100%;
         background:#2e2863;
-        padding: 10px 0px 20px 100px;
-        transition: opacituy .8s;
+        padding: 10px 0px 16px 100px;
+        transition: opacity .8s;
         opacity: 0;
         margin-top: 60px;
         }
