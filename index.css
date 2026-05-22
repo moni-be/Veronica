@@ -31,7 +31,10 @@ p {
   line-height: 24px;
   letter-spacing: 1px;
 }
-
+p a{
+  color: var(--color-white);
+  text-decoration: none;
+}
 h4 {
   font-size: 1em;
   line-height: 24px;
