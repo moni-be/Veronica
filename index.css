@@ -31,10 +31,7 @@ p {
   line-height: 24px;
   letter-spacing: 1px;
 }
-p a{
-  color: var(--color-white);
-  text-decoration: none;
-}
+
 h4 {
   font-size: 1em;
   line-height: 24px;
@@ -83,6 +80,9 @@ header p {
   width: 230px;
   text-align: center;
   font-weight: 500;
+}
+header p a[href^=https] {
+  color: var(--color-white);
 }
 
 section.intro {
@@ -213,7 +213,6 @@ section .profile .year .timeline .experience {
   padding-top: 8px;
   padding-left: 75px;
 }
-
 section .profile .year .timeline .chapeau {
   display: flex;
   flex-direction: row;
@@ -223,7 +222,6 @@ section .profile .year .timeline .chapeau {
   align-items: last baseline;
   padding-left: 75px;
 }
-
 section .profile .year .timeline .chapeau h3 {
   display: block;
   width: 80%;
@@ -284,12 +282,6 @@ section .profile .year .description {
   text-align: left;
   padding-left: 30px;
 }
-section .profile .year .description a {
-  font-weight: bold;
-}
-section .profile .year .description a:hover {
-  text-decoration: underline;
-}
 section .profile .year .description > h2 {
   font-size: 1.3em;
   line-height: 28px;
@@ -303,6 +295,14 @@ section .profile .year .description li {
   list-style: none;
   line-height: 24px;
   letter-spacing: 1;
+}
+section .profile .year .description a[href^=https] {
+  color: var(--color-white);
+  font-weight: 600;
+  text-decoration: none;
+}
+section .profile .year .description a:hover {
+  text-decoration: underline;
 }
 section .profile h3.citation {
   font-size: 1em;
@@ -497,9 +497,10 @@ footer p {
     margin: 0;
   }
   section.intro p {
-    width: 80%;
-    margin: 30px auto 0px;
+    width: 90% !important;
+    margin: 20px auto 0px;
     text-align: center;
+    font-size: 1em;
   }
   section {
     width: 100%;

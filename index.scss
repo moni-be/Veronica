@@ -62,7 +62,8 @@ header{
             width: 230px;
             text-align: center;
             font-weight: 500;
-        }  
+        }
+        p a[href^="https"]{color: var(--color-white)} 
 
 }
 section.intro{
@@ -264,7 +265,8 @@ section{
                         line-height: 24px;
                         letter-spacing: 1;
                     }
-                    
+                    a[href^="https"]{color: var(--color-white); font-weight:600; text-decoration: none}
+                    a:hover{text-decoration: underline}             
                 }
             }
             h3.citation{
@@ -452,9 +454,7 @@ footer{
             font-size: 5em;
             margin:0 
         }
-        p{
-            width: 80%; margin:30px auto 0px; text-align: center;
-        }
+        p{width: 90%!important; margin:20px auto 0px; text-align: center;font-size: 1em;}
 	}
 	section{
 		width: 100%;
@@ -478,7 +478,7 @@ footer{
         .profile{
             width: 90%;
             margin: 0 auto;
-            padding: 0;
+            padding: 0;           
             .year,.years{
                 width: 100%;
                 flex-direction: column;
